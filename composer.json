@@ -1,0 +1,19 @@
+{
+    "name": "mknszc/design-patterns",
+    "description": "Design Patterns for Php",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mknszc\\DesignPatterns\\": "Src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Özcan Çamoğlu",
+            "email": "ozcan.camoglu@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "9.5"
+    }
+}
