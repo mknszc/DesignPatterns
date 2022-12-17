@@ -7,13 +7,12 @@ use PHPUnit\Framework\TestCase;
 
 class SingletonTest extends TestCase
 {
-	public function testSameObject()
-	{
-		$first = Singleton::getInstance();
-		$second = Singleton::getInstance();
+    public function testSameObject()
+    {
+        $first = Singleton::getInstance();
+        $second = Singleton::getInstance();
 
-		$this->assertSame($first, $second);
-	}
+        $this->assertSame($first, $second);
+    }
 }
-
 
