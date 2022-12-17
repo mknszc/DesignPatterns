@@ -4,7 +4,7 @@ namespace DesignPatterns\Src\Creational\Singleton;
 
 class Singleton
 {
-	private static ?Singleton $instance = null;
+    private static ?Singleton $instance = null;
 
 	public static function getInstance(): Singleton
 	{
@@ -15,3 +15,4 @@ class Singleton
 		return self::$instance;
 	}
 }
+

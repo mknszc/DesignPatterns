@@ -15,3 +15,5 @@ class SingletonTest extends TestCase
 		$this->assertSame($first, $second);
 	}
 }
+
+
