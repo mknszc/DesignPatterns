@@ -2,6 +2,8 @@
 
 namespace DesignPatterns\Src\Creational\Singleton;
 
+use Exception;
+
 class Singleton
 {
     private static ?Singleton $instance = null;
@@ -13,5 +15,27 @@ class Singleton
         }
 
         return self::$instance;
+    }
+
+    /**
+     *This is not allowed in the singleton design pattern
+     */
+    private function __construct()
+    {
+    }
+
+    /**
+     *This is not allowed in the singleton design pattern
+     */
+    private function __clone()
+    {
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function __wakeup()
+    {
+        throw new Exception("Cannot unserialize a singleton.");
     }
 }
