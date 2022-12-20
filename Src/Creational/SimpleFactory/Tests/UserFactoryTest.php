@@ -23,14 +23,14 @@ class UserFactoryTest extends TestCase
         $this->assertInstanceOf(Professor::class, $professor);
     }
 
-    public function testCrateStudentReturnType()
+    public function testCreateStudentReturnType()
     {
         $student = (new UserFactory())->buildStudent();
         $result  = $student->create(['test']);
         $this->assertIsBool($result);
     }
 
-    public function testCrateProfessorReturnType()
+    public function testCreateProfessorReturnType()
     {
         $professor = (new UserFactory())->buildProfessor();
         $result  = $professor->create(['test']);
