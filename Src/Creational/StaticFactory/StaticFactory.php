@@ -14,5 +14,4 @@ final class StaticFactory
             default => throw new InvalidArgumentException('Unknown format given'),
         };
     }
-
 }
