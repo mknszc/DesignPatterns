@@ -2,8 +2,6 @@
 
 namespace DesignPatterns\Src\Creational\StaticFactory\Tests;
 
-namespace DesignPatterns\Src\Creational\StaticFactory\Tests;
-
 use InvalidArgumentException;
 use DesignPatterns\Src\Creational\StaticFactory\FormatNumber;
 use DesignPatterns\Src\Creational\StaticFactory\FormatString;
