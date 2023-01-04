@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 class FactoryMethodTest extends TestCase
 {
-    public function testCanCrateSedan()
+    public function testCanCreateSedan()
     {
         $factory = new SedanFactory();
         $car = $factory->makeCar();
@@ -18,7 +18,7 @@ class FactoryMethodTest extends TestCase
         $this->assertInstanceOf(Sedan::class, $car);
     }
 
-    public function testCanCrateSuv()
+    public function testCanCreateSuv()
     {
         $factory = new SuvFacory();
         $car = $factory->makeCar();
