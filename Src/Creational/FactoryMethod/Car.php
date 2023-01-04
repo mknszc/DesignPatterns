@@ -2,7 +2,8 @@
 
 namespace DesignPatterns\Src\Creational\FactoryMethod;
 
-class Factory
+interface Car
 {
-
+    public function getType(): string;
 }
+
