@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 
 class AbstractFactoryTest extends TestCase
 {
-    public function provideFactory()
+    public function provideFactory(): array
     {
         return [
             [new UnixWriterFactory()],
