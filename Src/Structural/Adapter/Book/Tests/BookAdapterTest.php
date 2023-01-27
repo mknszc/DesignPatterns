@@ -1,13 +1,13 @@
 <?php
 
-namespace DesignPatterns\Src\Structural\Adapter\Tests;
+namespace DesignPatterns\Src\Structural\Adapter\Book\Tests;
 
-use DesignPatterns\Src\Structural\Adapter\EBookAdapter;
-use DesignPatterns\Src\Structural\Adapter\Kindle;
-use DesignPatterns\Src\Structural\Adapter\PaperBook;
+use DesignPatterns\Src\Structural\Adapter\Book\EBookAdapter;
+use DesignPatterns\Src\Structural\Adapter\Book\Kindle;
+use DesignPatterns\Src\Structural\Adapter\Book\PaperBook;
 use PHPUnit\Framework\TestCase;
 
-class AdapterTest extends TestCase
+class BookAdapterTest extends TestCase
 {
     public function testCanTurnPageOnBook()
     {
